@@ -17,7 +17,7 @@ public:
 	Heap* getHeap();
 	//void dump();
 
-	void free(void* const data);
+	void free(void** data);
 	void* malloc(const uint32_t size);
 	void initialize();
 

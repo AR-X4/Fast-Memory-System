@@ -491,9 +491,10 @@ void Mem::AddFreeBlock(Used* pUsed) const
 	}
 }
 
-void Mem::free(void* const data)
+void Mem::free(void** data)
 {
-	Used* pUsedHdrStart = (Used*)(data)-1;
+	Used* pUsedHdrStart = (Used*)(*data)-1;
 	this->RemoveUsedBlock(pUsedHdrStart);
 	this->AddFreeBlock(pUsedHdrStart);
+	*data = nullptr;
 }
