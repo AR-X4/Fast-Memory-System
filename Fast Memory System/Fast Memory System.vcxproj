@@ -162,6 +162,7 @@
     <ClInclude Include="Free.h" />
     <ClInclude Include="Heap.h" />
     <ClInclude Include="Mem.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="Used.h" />
   </ItemGroup>
